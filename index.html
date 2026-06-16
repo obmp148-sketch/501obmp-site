@@ -124,24 +124,24 @@ form textarea{
 form button{
     margin-top:10px;
 .join-btn{
-    position:fixed !important;
-    right:20px !important;
-    bottom:20px !important;
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    z-index:99999;
 
-    background:linear-gradient(135deg,#d4af37,#f7d774) !important;
-    color:#000 !important;
-
+    background:linear-gradient(135deg,#c89b3c,#8a6420);
+    color:white;
     padding:15px 30px;
     border-radius:10px;
     text-decoration:none;
     font-weight:bold;
-
-    box-shadow:0 0 15px rgba(212,175,55,0.7);
-    z-index:99999 !important;
+    box-shadow:0 0 15px rgba(200,155,60,0.5);
+    transition:all 0.3s ease;
 }
 
 .join-btn:hover{
-    background:linear-gradient(135deg,#f7d774,#d4af37) !important;
+    background:linear-gradient(135deg,#d6ab4f,#a97b29);
+    transform:scale(1.05);
 }
 </head>
 <script>
