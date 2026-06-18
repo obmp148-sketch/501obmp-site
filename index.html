@@ -758,6 +758,16 @@ popup.style.display="none";
 <script>
 function openJob(job){
 
+    document.getElementById("jobTitle").innerText =
+        vacancies[job].title;
+
+    document.getElementById("jobDescription").innerText =
+        vacancies[job].description;
+
+    document.getElementById("jobModal").style.display =
+        "block";
+}
+
     const vacancies = {
 
         "bpla": {
@@ -864,11 +874,7 @@ function openJob(job){
             "block";
     }
 }
-    document.getElementById("jobTitle").innerText = title;
-    document.getElementById("jobDescription").innerText = description;
-
-    document.getElementById("jobModal").style.display = "block";
-}
+  
 
 function closeJob(){
     document.getElementById("jobModal").style.display = "none";
