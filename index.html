@@ -539,45 +539,32 @@ onclick="openForm()">
 
 <div class="cards">
 
-<div class="card">
-<h3>ОПЕРАТОР БПЛА</h3>
-<p>Робота з безпілотними авіаційними комплексами.</p>
+<div class="card" onclick="openJob('bpla')">
+    <h3>ОПЕРАТОР БПЛА</h3>
+    <p>Робота з безпілотними авіаційними комплексами.</p>
 </div>
 
-<div class="card">
-<h3>ПІЛОТ FPV</h3>
-<p>Керування FPV-дронами та виконання завдань.</p>
+<div class="card" onclick="openJob('fpv')">
+    <h3>ПІЛОТ FPV</h3>
+    <p>Керування FPV-дронами та виконання завдань.</p>
 </div>
-
-<div class="card">
+<div class="card" onclick="openJob('driver')">
 <h3>ВОДІЙ</h3>
-<p>Керування та обслуговування техніки.</p>
-</div>
-
-<div class="card">
+    
+<div class="card" onclick="openJob('medic')">
 <h3>МЕДИК</h3>
-<p>Медичне забезпечення особового складу.</p>
-</div>
 
-<div class="card">
+<div class="card" onclick="openJob('rifleman')">
 <h3>СТРІЛЕЦЬ</h3>
-<p>Виконання завдань у складі підрозділу.</p>
-</div>
 
-<div class="card">
+<div class="card" onclick="openJob('mg')">
 <h3>КУЛЕМЕТНИК</h3>
-<p>Робота зі штатним озброєнням підрозділу.</p>
-</div>
 
-<div class="card">
+<div class="card" onclick="openJob('grenadier')">
 <h3>ГРАНАТОМЕТНИК</h3>
-<p>Застосування гранатометного озброєння.</p>
-</div>
 
-<div class="card">
-<h3>ЗВ'ЯЗКІВЕЦЬ</h3>
-<p>Забезпечення стабільного зв'язку підрозділу.</p>
-</div>
+<div class="card" onclick="openJob('grenadier')">
+<h3>ГРАНАТОМЕТНИК</h3>
 
 </div>
 
@@ -761,7 +748,35 @@ function openJob(job){
         title = "Оператор БПЛА";
         description = "Робота з безпілотними авіаційними комплексами, розвідка та коригування.";
     }
+if(job === "driver"){
+    title = "Водій";
+    description = "Керування військовою технікою, перевезення особового складу та вантажів. Навчання надається.";
+}
 
+if(job === "medic"){
+    title = "Медик";
+    description = "Надання домедичної допомоги, евакуація поранених та медичний супровід підрозділу.";
+}
+
+if(job === "rifleman"){
+    title = "Стрілець";
+    description = "Виконання бойових завдань у складі підрозділу морської піхоти.";
+}
+
+if(job === "mg"){
+    title = "Кулеметник";
+    description = "Робота зі штатним кулеметним озброєнням та вогнева підтримка підрозділу.";
+}
+
+if(job === "grenadier"){
+    title = "Гранатометник";
+    description = "Застосування гранатометного озброєння та підтримка штурмових груп.";
+}
+
+if(job === "signal"){
+    title = "Зв'язківець";
+    description = "Забезпечення стабільного зв'язку підрозділу та робота із засобами радіозв'язку.";
+}
     document.getElementById("jobTitle").innerText = title;
     document.getElementById("jobDescription").innerText = description;
 
