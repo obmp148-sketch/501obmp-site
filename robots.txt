@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://obmp501recruiting.github.io/501obmp-site/sitemap.xml
